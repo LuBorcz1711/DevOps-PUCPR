@@ -24,6 +24,6 @@
       steps:
         - uses: actions/download-artifact@v8
           with:
-            name: projetozipado2.zip
+            name: projetozipado.zip
         - name: Display structure of downloaded files
           run: ls -R
