@@ -15,5 +15,6 @@
           with:
             name: projetozipado.zip
             path: |
+              '**.py'
               main.py
               README.md
