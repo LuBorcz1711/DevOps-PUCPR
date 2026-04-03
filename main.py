@@ -1,10 +1,10 @@
 import random
 from fastapi import FastAPI
-from pydantic import BaseModal
+from pydantic import BaseModel
 
 app = FastAPI()
 
-class Estudante(BaseModal):
+class Estudante(BaseModel):
     name: str
     curso: str
     ativo: bool
