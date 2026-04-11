@@ -41,4 +41,13 @@
             DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           uses: Ilshidur/action-discord@master
           with:
-            args: 'The project has been deployed.'
+            args: |
+              🚀 **CI Finalizado**
+              
+              📌 Repo: ${{ github.repository }}
+              👤 Autor: ${{ github.actor }}
+              
+              ✅ Build: ${{ needs.build.result }}
+              🐳 Docker: ${{ needs.docker.result }}
+              
+              🔗 PR: ${{ github.event.pull_request.html_url }}
