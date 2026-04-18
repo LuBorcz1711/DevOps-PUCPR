@@ -1,6 +1,5 @@
 from src.main import *
 from unittest.mock import patch
-# oi
 
 def test_root():
     assert root() == {"message": "Hello Word!"}
